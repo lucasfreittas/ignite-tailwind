@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 @theme {
-  --color-lucas: #27adff;
+  --grid-cols-app: minmax(18rem, 20rem) 1fr;
 }
