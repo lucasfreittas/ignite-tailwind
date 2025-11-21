@@ -2,4 +2,7 @@
 
 @theme {
   --grid-cols-app: minmax(18rem, 20rem) 1fr;
+  --color-primary-50: #f9f5ff;
+  --color-primary-400: #b692f6;
+  --color-primary-700: #6941c6;
 }

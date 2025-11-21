@@ -18,7 +18,16 @@ export default defineConfig([
     },
 
     rules: {
-      "prettier/prettier": "error",
+      "prettier/prettier": [
+        "error",
+        {
+          endOfLine: "auto",
+          singleQuote: false,
+          semi: true,
+          trailingComma: "es5",
+          tabWidth: 2,
+        },
+      ],
     },
   },
 

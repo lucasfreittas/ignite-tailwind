@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Sidebar from "@/components/Sidebar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-inter", // opcional, útil para Tailwind
 });
 
 export const metadata: Metadata = {
@@ -23,13 +19,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="pt-br">
+      <body className={`${inter.variable} antialiased`}>
         <div className="grid min-h-screen grid-cols-(--grid-cols-app)">
           <aside className="border-r border-zinc-200 py-8 px-4">
-            SideBar Navigation
+            <Sidebar />
           </aside>
           <main className="p-8">{children}</main>
         </div>
