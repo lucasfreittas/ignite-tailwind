@@ -1,7 +1,7 @@
 import { Input } from "../Input";
 import { Logo } from "./Logo";
 import { NavigationOption } from "./NavigationOption";
-import { LifeBuoy, Settings } from "lucide-react";
+import { LifeBuoy, Settings, Search } from "lucide-react";
 
 import {
   House,
@@ -16,12 +16,12 @@ import { Profile } from "./Profile";
 
 export default function Sidebar() {
   return (
-    <div className="h-full flex flex-col">
+    <div className="flex h-full flex-col">
       <Logo />
-      <Input />
+      <Input icon={<Search />} />
 
       <nav className="grow">
-        <ul className="flex flex-col gap-1 ">
+        <ul className="flex flex-col gap-1">
           <li>
             <NavigationOption
               href="/"

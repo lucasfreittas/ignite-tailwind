@@ -3,7 +3,7 @@ import { LogOut } from "lucide-react";
 
 export function Profile() {
   return (
-    <div className="flex gap-3 items-center">
+    <div className="flex items-center gap-3">
       <Image
         src={"https://github.com/lucasfreittas.png"}
         alt=""
@@ -11,18 +11,18 @@ export function Profile() {
         height={40}
         className="rounded-full"
       />
-      <div className="flex flex-col max-w-[180px] truncate">
-        <p className="font-semibold text-sm text-zinc-700 truncate">
+      <div className="flex max-w-[180px] flex-col truncate">
+        <p className="truncate text-sm font-semibold text-zinc-700">
           Lucas Freitas
         </p>
-        <p className="font-normal text-sm text-zinc-500 truncate">
+        <p className="truncate text-sm font-normal text-zinc-500">
           l.freittas@outlook.com
         </p>
       </div>
 
       <LogOut
         size={20}
-        className="ml-auto text-zinc-500 hover:brightness-125 cursor-pointer"
+        className="ml-auto cursor-pointer text-zinc-500 hover:brightness-125"
       />
     </div>
   );

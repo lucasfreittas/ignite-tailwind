@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={`${inter.variable} antialiased`}>
         <div className="grid min-h-screen grid-cols-(--grid-cols-app)">
-          <aside className="border-r border-zinc-200 py-8 px-4">
+          <aside className="border-r border-zinc-200 px-4 py-8">
             <Sidebar />
           </aside>
           <main className="p-8">{children}</main>

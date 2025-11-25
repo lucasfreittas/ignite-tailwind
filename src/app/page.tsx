@@ -1,8 +1,10 @@
+import { Tabs } from "@/components/Tabs";
+
 export default function Home() {
   return (
-    <div className="bg-lucas">
-      <h1>Hello World</h1>
-      <h2>Ola</h2>
-    </div>
+    <>
+      <h1 className="text-3xl font-medium text-zinc-900">Settings</h1>
+      <Tabs />
+    </>
   );
 }

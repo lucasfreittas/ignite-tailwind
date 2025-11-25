@@ -6,3 +6,10 @@
   --color-primary-400: #b692f6;
   --color-primary-700: #6941c6;
 }
+
+@layer utilities {
+  .webkit-antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
