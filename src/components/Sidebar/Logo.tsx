@@ -2,9 +2,9 @@ export function Logo() {
   return (
     <div className="flex items-center gap-2.5">
       <svg
-        width={38}
-        height={38}
-        viewBox="0 0 38 38"
+        width={36}
+        height={36}
+        viewBox="0 0 36 36"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
