@@ -1,3 +1,7 @@
 export function TabUserDetails() {
-  return <p>Eu sou detail</p>;
+  return (
+    <div>
+      <h1>Ola</h1>
+    </div>
+  );
 }
